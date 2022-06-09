@@ -1,7 +1,7 @@
-// import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 
 const App = () => {  
 
@@ -11,6 +11,7 @@ const App = () => {
           <Navbar />
           <div className="container">
             <Home />
+            <Footer />
           </div>
         </div>
     </div>
