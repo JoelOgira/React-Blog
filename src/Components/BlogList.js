@@ -1,6 +1,7 @@
-const BlogList = ({blogs}) => {
+const BlogList = ({blogs, title}) => {
     return ( 
         <div className="blog-list">
+            <h2 className="display-4 text-center mb-3">{title}</h2>
             {blogs.map(blog => (
                 <div className="blog-preview" key={blog.id}>
                     <div className="card mb-2">

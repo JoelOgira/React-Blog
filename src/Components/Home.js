@@ -3,6 +3,8 @@ import BlogList from './BlogList';
 
 const Home = () => {
 
+    const title = 'This is the Home page';
+
     const [blogs, setBlogs] = useState([
         {title: 'The River and the Source', body: 'Long ago in the smoky hut of Aketh, a girl was born, Akoko', author: 'Margret A Ogolla', id: 1},
         {title: 'Kidagaa Kimemwozea', body: 'Amani na Imani nao wakatoroka mbio walipomwona Mtemi Nasaba Bora', author: 'Ken Walibora', id: 2},
@@ -10,9 +12,11 @@ const Home = () => {
     ]); 
 
     return ( 
-        <div className="home">
-            <h2 className="display-4 text-center">This is the Home page</h2>
-            <BlogList blogs={blogs}/>                       
+        <div className="home">            
+            <BlogList 
+                blogs={blogs}
+                title={title}
+            />                       
         </div>
     );
 }
