@@ -1,22 +1,24 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return ( 
         <div className="navbar navbar-expand-sm py-4 navbar">
             <div className="container">
                 <div className="navbar-brand">
-                    <a href="#/">Better Health</a>
+                    <Link to="/" style={{paddingBottom: '10px'}}>Better Health</Link>
                 </div>
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a href="/" className="nav-link">Home</a>
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/create" className="nav-link">New Blog</a>
+                        <Link to="/blogs" className="nav-link">Blogs</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/" className="nav-link">About</a>
+                        <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/" className="nav-link">Contact</a>
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </div>

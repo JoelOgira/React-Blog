@@ -6,7 +6,7 @@ const Home = () => {
     const {title, data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs')
     
     return ( 
-        <div className="home">
+        <div className="Home">
             {error && (<div className='text-center text-danger py-4 my-4' style={{fontSize: '30px'}}>{error}</div>)}
             {isLoading && (<div className='text-center text-success py-4 my-4' style={{fontSize: '30px'}}> Content Loading.... </div>) }
             {blogs && <BlogList  
