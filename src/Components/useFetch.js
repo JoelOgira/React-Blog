@@ -28,7 +28,7 @@ const useFetch = (url) => {
                 setError(err.message);
             });
         
-        return () => console.log('Clean up code');
+        // return () => console.log('Clean up code');
 
     }, [url]);
 

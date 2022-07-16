@@ -6,3 +6,16 @@ a {
 a:hover {
   border-bottom: 1px solid #198754;
 }
+
+.App {
+  height: 100vh;
+}
+
+.sticky-footer {
+  position: sticky !important;
+  top: 100% !important;
+}
+
+.card i:hover {
+  color: red !important;
+}
